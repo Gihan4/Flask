@@ -7,7 +7,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def home_page():
-    return render_template("HomePage.html")
+    logo_url = "bitcoin.png"
+    return render_template("HomePage.html", logo_url=logo_url)
 
 @app.route("/eth")
 def eth():
